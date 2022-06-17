@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+
+			<meta charset="utf-8" />
+			<link rel="stylesheet" type="text/css" href="css/main.css" />
+			<title>Site en construction</title>
+
+		</head>
+
+		<body>
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+
+			<div id="kelu" class="kelu"></div>
+
+			<div class="grue"></div>
+
+			<div class="fleche"></div>
+
+			<div class="banniere">
+					<h1>Site en construction</h1>
+			</div>
+
+			<div class="chariot"></div>
+
+			<div class="cable"></div>
+
+			<div class="list-container">
+		        <div id="ma-liste" class="list-group">
+		            <a class="list-group-item" href="#section1">titre 1</a>
+		            <a class="list-group-item" href="#section2">titre 2</a>
+		            <a class="list-group-item" href="#section3">titre 3</a>
+		        </div>
+        	</div>
+
+        	<div id="section1" class="section">
+
+			<div id="nuage1" class="nuage">
+				<h2 id="titre1">titre 1</h2>
+
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper gravida ligula, et eleifend lacus. Ut massa nisl, varius ut viverra vel, sodales quis quam. Cras nec leo sodales, dignissim urna at, vulputate nunc. Integer accumsan eu leo vel pulvinar. Nunc fringilla risus sem, ac pellentesque lacus posuere in. Curabitur elit tellus, rhoncus eu semper non, consectetur pulvinar mauris. Duis et elit quis mauris interdum vestibulum in sed erat. Aenean in dolor tempor, dapibus eros quis, pellentesque velit. Pellentesque pharetra commodo eleifend. Duis nunc ante, ultrices non turpis sed, aliquet convallis libero. Nam vitae iaculis dolor. Sed metus dui, hendrerit non bibendum et, luctus nec urna.<br>
+				Donec ultricies nibh vel velit ultricies interdum. Aliquam erat volutpat. Pellentesque magna lacus, mattis in erat eu, egestas commodo ligula. Aliquam congue ac nunc nec hendrerit. Aliquam enim nulla, iaculis vel mollis sed, cursus ut leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc tempus venenatis facilisis. Praesent eu efficitur libero, non efficitur nulla. Cras risus enim, viverra vel feugiat ac, hendrerit eget risus. Etiam blandit cursus eros id finibus. Integer at sagittis ipsum, sed molestie sem. In mattis non ante efficitur placerat.</p>
+
+				<img src="images/panneau.png" />
+			</div>
+
+			<div id="section2" class="section">
+
+			<div id="nuage2" class="nuage">
+				<h2 id="titre2">titre 2</h2>
+
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper gravida ligula, et eleifend lacus. Ut massa nisl, varius ut viverra vel, sodales quis quam. Cras nec leo sodales, dignissim urna at, vulputate nunc. Integer accumsan eu leo vel pulvinar. Nunc fringilla risus sem, ac pellentesque lacus posuere in. Curabitur elit tellus, rhoncus eu semper non, consectetur pulvinar mauris. Duis et elit quis mauris interdum vestibulum in sed erat. Aenean in dolor tempor, dapibus eros quis, pellentesque velit. Pellentesque pharetra commodo eleifend. Duis nunc ante, ultrices non turpis sed, aliquet convallis libero. Nam vitae iaculis dolor. Sed metus dui, hendrerit non bibendum et, luctus nec urna.<br>
+				Donec ultricies nibh vel velit ultricies interdum. Aliquam erat volutpat. Pellentesque magna lacus, mattis in erat eu, egestas commodo ligula. Aliquam congue ac nunc nec hendrerit. Aliquam enim nulla, iaculis vel mollis sed, cursus ut leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc tempus venenatis facilisis. Praesent eu efficitur libero, non efficitur nulla. Cras risus enim, viverra vel feugiat ac, hendrerit eget risus. Etiam blandit cursus eros id finibus. Integer at sagittis ipsum, sed molestie sem. In mattis non ante efficitur placerat.</p>
+
+				<img src="images/panneau.png" />
+			</div>
+
+			<div id="section3" class="section">
+
+			<div id="nuage3" class="nuage">
+				<h2 id="titre3">titre 3</h2>
+
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper gravida ligula, et eleifend lacus. Ut massa nisl, varius ut viverra vel, sodales quis quam. Cras nec leo sodales, dignissim urna at, vulputate nunc. Integer accumsan eu leo vel pulvinar. Nunc fringilla risus sem, ac pellentesque lacus posuere in. Curabitur elit tellus, rhoncus eu semper non, consectetur pulvinar mauris. Duis et elit quis mauris interdum vestibulum in sed erat. Aenean in dolor tempor, dapibus eros quis, pellentesque velit. Pellentesque pharetra commodo eleifend. Duis nunc ante, ultrices non turpis sed, aliquet convallis libero. Nam vitae iaculis dolor. Sed metus dui, hendrerit non bibendum et, luctus nec urna.<br>
+				Donec ultricies nibh vel velit ultricies interdum. Aliquam erat volutpat. Pellentesque magna lacus, mattis in erat eu, egestas commodo ligula. Aliquam congue ac nunc nec hendrerit. Aliquam enim nulla, iaculis vel mollis sed, cursus ut leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc tempus venenatis facilisis. Praesent eu efficitur libero, non efficitur nulla. Cras risus enim, viverra vel feugiat ac, hendrerit eget risus. Etiam blandit cursus eros id finibus. Integer at sagittis ipsum, sed molestie sem. In mattis non ante efficitur placerat.</p>
+
+				<img src="images/panneau.png" />
+			</div>
+
+            <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+		    <script type="text/javascript">
+		      $(document).ready(() => {
+
+		        $('body').scrollspy({ target: '#ma-liste' });
+		      
+		      });
+
+		      //Get the button:
+		      mybutton = document.getElementById("myBtn");
+
+		      // When the user scrolls down 20px from the top of the document, show the button
+		      window.onscroll = function() {scrollFunction()};
+
+		      function scrollFunction() {
+		        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		          mybutton.style.display = "block";
+		        } else {
+		          mybutton.style.display = "none";
+		        }
+		      }
+
+		      // When the user clicks on the button, scroll to the top of the document
+		      function topFunction() {
+		        document.body.scrollTop = 0; // For Safari
+		        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		      }
+
+		      var kelu = document.getElementById("kelu");
+
+		      window.addEventListener("scroll", function() {
+				    kelu.style.transform = "rotateY("+window.pageYOffset+"deg)";
+				    
+				});
+
+
+		      ;(function() {
+			    var throttle = function(type, name, obj) {
+			        var obj = obj || window;
+			        var running = false;
+			        var func = function() {
+			            if (running) { return; }
+			            running = true;
+			            requestAnimationFrame(function() {
+			                obj.dispatchEvent(new CustomEvent(name));
+			                running = false;
+			            });
+			        };
+			        obj.addEventListener(type, func);
+			    };
+			    throttle ("scroll", "optimizedScroll");
+			})();
+
+
+
+
+		    </script>
+
+
+		</body>
+	</html>

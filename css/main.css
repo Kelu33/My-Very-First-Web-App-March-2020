@@ -1,0 +1,317 @@
+body {
+	height: 3240px;
+	margin: 0px;
+	background-color: #b4dba4;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+html {
+	height: 3240px;
+	scroll-behavior: smooth;	
+	user-select: none;
+
+}
+
+h2 {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+img {
+	display: block;
+	margin: auto;
+	padding: inherit;
+ 	box-sizing: content-box;
+	width: 25%;
+}
+
+.kelu {
+	display: flex;
+	position: fixed;
+	height: 95px;
+	width: 50px;
+	bottom: 160px;
+	right: 45px;
+	background-image: url(../images/kelu.png);
+	z-index: 0;
+
+}
+
+.grue {
+	position: absolute;
+	top: 130px;
+	right: 0px;
+	height: 3240px;
+	width: 285px;
+	background-image: url(../images/grue.png);
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	z-index: 1;
+}
+
+.fleche {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 130px;
+	width: 2840px;
+	background-image: url(../images/fleche.jpg);
+	z-index: 3;
+
+}
+
+.banniere {
+	position: absolute;
+	top: 5px;
+	right: 40px;
+	width: 374px;
+	height: 110px;
+	background-color: rgba(255, 255, 255, 0.95);
+	text-align: center;
+	border-style: solid;
+	border-width: 5px;
+	border-color: rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.5);
+	line-height: 60px;
+	z-index: 5;
+
+}
+
+.chariot {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 180px;
+	width: 160px;
+	background-image: url(../images/chariot.png);
+	z-index: 4;
+}
+
+.cable {
+	position: fixed;
+	bottom: 450px;
+	left: 10px;
+	height: 100%;
+	width: 140px;
+	background-image: url(../images/cable.png);
+	z-index: 2;
+}
+
+
+.nuage {
+	position: relative;
+	height: 840px;
+	margin-top: 160px;
+	margin-right: 160px;
+	margin-left: 160px;
+	padding: 50px;
+	background-color: rgba(255, 255, 255, 0.45);
+	text-align: justify;
+	z-index: 1;
+	font-size: 100%;
+
+
+}
+
+.list-container {
+	position: fixed;
+	left: 10px;
+	height: 600px;
+	width: 140px;
+	white-space: nowrap;
+	bottom: 159px;
+	z-index: 2;
+	font-size: 1.4em;
+	background-image: url(../images/menu.png);
+	background-size: 100% 100%;
+	z-index: 2;
+
+}
+
+
+div.list-group {
+	width: 130px;
+	height: 92px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	padding-top: 504px;
+	padding-left: 4px;
+	border-radius: 3px;
+
+
+}
+
+a.list-group-item {
+	flex: 0 0 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.75);
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(255, 255, 255, 0.95);
+	cursor: pointer;
+
+}
+
+a.list-group-item.active {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: rgba(255, 255, 255, 0.95);
+
+}
+a.list-group-item:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: rgba(255, 255, 255, 0.95);
+
+}
+
+
+
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 30px; /* Place the button at the bottom of the page */
+	right: 28px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.3);
+	background-color: #b4181d; /* Set a background color */
+	opacity: 0.8;
+	color: rgba(255, 255, 255, 0.8); /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 25px; /* Some padding */
+	border-radius: 3px; /* Rounded corners */
+	font-size: 1.4em; /* Increase font size */
+
+}
+
+#myBtn:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
+
+}
+
+@media screen and (max-height: 600px) {
+	.list-container {
+		top: -160px;
+	}
+
+}
+
+@media screen and (min-height: 3400px) {
+	.kelu {
+		position: absolute;
+		right: 45px;
+		top: 3140px;
+
+	}
+	.cable {
+		display: none;
+		
+	}
+	.list-container {
+		position: absolute;
+		height: 2160px;
+		left: 10px;
+		top: 130px;
+		background-image: url(../images/menufix.png);
+		z-index: 1;
+	}
+	div.list-group {
+		display: none;
+	}
+}
+@media screen and (min-width: 2840px) {
+	.chariot {
+		left: auto;
+		right: 2665px;
+	}
+	.cable {
+		display: none;
+	}
+	.list-container {
+		height: 2160px;
+		left: auto;
+		right: 2675px;
+		top: -500px;
+		background-image: url(../images/menufix.png);
+		z-index: 1;
+	}
+	div {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.nuage {
+		position: top, left;
+		flex-direction: column;
+		min-width: 750px;
+		height: 1334px;
+	}
+	div.list-group {
+		display: none;
+	}
+	
+}
+@media screen and (max-width: 850px) {
+	.chariot {
+		left: auto;
+		right: 675px;
+		z-index: 99;
+		
+	}
+	
+	.cable {
+		display: none;
+		
+	}
+	.list-container {
+		position: absolute;
+		height: 2160px;
+		left: auto;
+		top: 130px;
+		right: 685px;
+		background-image: url(../images/menufix.png);
+		background-size: 100%;
+		opacity:0.5;
+		z-index: 80;
+	}
+	
+
+	div.list-group {
+		position: fixed;
+		bottom: 5px;
+		right: 7px;
+		width: 78px;
+		height: 80px;
+
+	}
+	#myBtn {
+		height: 30px;
+		width: 80px;
+		bottom: 85px;
+		right: 5px;
+		padding: 2px;
+		border-radius: 3px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgba(0, 0, 0, 0.3);
+	}
+	.nuage {
+		margin-right: 60px;
+		margin-left: 60px;
+	}
+
+}
+
+@media screen and (max-width: 750px) {
+	.nuage {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+}
